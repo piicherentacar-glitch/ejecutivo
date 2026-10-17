@@ -4,7 +4,7 @@ PICHE PREMIUM SERVICES — PROYECTO PARA NETLIFY
 - Se actualizó la cabecera con el logotipo oficial proporcionado.
 - La imagen detrás del formulario dejó de ser un fondo dominante y ahora funciona como una marca de agua tenue.
 - El formulario conserva un fondo blanco limpio y legible.
-- El formulario envía la solicitud preparada a WhatsApp (+503 7744 3587).
+- El formulario envía la solicitud preparada a WhatsApp (+503 7744 3687).
 - La sección roja independiente de contacto continúa eliminada.
 
 PUBLICAR
@@ -27,7 +27,7 @@ Se reemplazó la silueta provisional por el archivo oficial aprobado que entreg�
 
 
 ICONO DE WHATSAPP
-Se añadió el icono verde de WhatsApp junto al número telefónico de la bienvenida y junto al contacto de WhatsApp del pie de página. Ambos enlaces abren el chat con el número +503 7744 3587.
+Se añadió el icono verde de WhatsApp junto al número telefónico de la bienvenida y junto al contacto de WhatsApp del pie de página. Ambos enlaces abren el chat con el número +503 7744 3687.
 
 
 AJUSTES EXCLUSIVOS PARA MÓVILES
