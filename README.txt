@@ -1,15 +1,15 @@
 PICHE PREMIUM SERVICES — PROYECTO PARA NETLIFY
 
-CAMBIOS DE ESTA VERSIÓN
-- Se eliminó la sección roja independiente “Reserva tu traslado hoy”.
-- El formulario de reservas permanece flotante a la derecha sobre la imagen de los vehículos.
-- El logotipo, la fotografía del aeropuerto y la imagen de los vehículos están incrustados directamente en index.html. Así se muestran incluso si publicas solo ese HTML.
-- El menú tiene Servicios, Reservar y WhatsApp.
-- El formulario prepara una solicitud y la abre en WhatsApp (+503 7744 3587).
+ÚLTIMOS AJUSTES
+- Se actualizó la cabecera con el logotipo oficial proporcionado.
+- La imagen detrás del formulario dejó de ser un fondo dominante y ahora funciona como una marca de agua tenue.
+- El formulario conserva un fondo blanco limpio y legible.
+- El formulario envía la solicitud preparada a WhatsApp (+503 7744 3587).
+- La sección roja independiente de contacto continúa eliminada.
 
-PUBLICACIÓN
-Recomendado: descomprime el ZIP y sube la carpeta completa a https://app.netlify.com/drop.
-También se puede abrir index.html directamente para revisar el diseño.
+PUBLICAR
+Descomprime el ZIP y sube la carpeta completa a https://app.netlify.com/drop.
+El HTML incluye las imágenes críticas incrustadas para reducir errores de rutas.
 
 IMPORTANTE
-El formulario no guarda datos en una base de datos; abre WhatsApp con el mensaje preparado.
+El formulario abre WhatsApp; no almacena reservas en una base de datos.
