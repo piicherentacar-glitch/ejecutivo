@@ -35,3 +35,7 @@ AJUSTES EXCLUSIVOS PARA MÓVILES
 - El formulario de reserva aparece inmediatamente debajo del encabezado/menú, antes del texto de bienvenida.
 - En móvil, la fotografía de los vehículos queda como marca de agua tenue detrás del formulario, sin ocupar una franja grande antes de él.
 - La distribución de escritorio no se modifica con estas reglas.
+
+
+ORDEN DEL CONTENIDO EN MÓVILES
+Se ajustó el orden para que primero aparezca el texto de bienvenida y, justo después, el formulario de reserva. La fotografía sigue como marca de agua tenue detrás del formulario, sin una franja grande de imagen encima. Este cambio aplica únicamente a móviles.

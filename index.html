@@ -723,9 +723,12 @@
       gap:22px !important;
       padding-top:calc(var(--header-h) + 12px) !important;
     }
-    /* El formulario aparece inmediatamente debajo del encabezado/menú. */
+    /* En móvil: primero el texto de bienvenida y después el formulario. */
+    .hero-inner {
+      order:0 !important;
+    }
     .hero-visual {
-      order:-1 !important;
+      order:1 !important;
       display:block !important;
       width:100% !important;
       max-width:none !important;
@@ -770,9 +773,6 @@
       padding:20px !important;
       border-radius:18px !important;
       background:rgba(255,255,255,.97) !important;
-    }
-    .hero-inner {
-      order:0 !important;
     }
   }
 
