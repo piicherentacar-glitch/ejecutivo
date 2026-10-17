@@ -441,6 +441,157 @@
     .card, .btn { transition: none; }
   }
 
+
+  /* PICHE Premium Services: identidad corporativa y formulario flotante */
+  :root {
+    --red: #d20c16;
+    --red-dark: #a80811;
+    --wine: #4b070b;
+    --ink: #101319;
+    --card: #ffffff;
+    --line: rgba(16,19,25,.12);
+    --text: #17191e;
+    --muted: #555b64;
+  }
+  body { background: #fff; color: #17191e; }
+  .site-header {
+    height: 88px;
+    padding: 8px clamp(18px, 4vw, 64px);
+    background: rgba(255,255,255,.94);
+    box-shadow: 0 2px 22px rgba(16,19,25,.08);
+    backdrop-filter: blur(14px);
+  }
+  .brand { min-width: 0; }
+  .brand-logo { display:block; width: min(218px, 28vw); height:auto; object-fit:contain; }
+  .brand-bar, .brand-name, .brand-sub { display:none; }
+  .nav { gap: clamp(14px, 2.4vw, 34px); }
+  .nav a:not(.btn) { color:#252830; text-transform:uppercase; font-size:.88rem; font-weight:700; }
+  .nav .btn-outline { background:var(--red); border-color:var(--red); color:#fff; }
+  .hero {
+    min-height: 100svh;
+    padding: 124px clamp(20px, 4vw, 64px) 44px;
+    background-image:
+      linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.88) 37%, rgba(255,255,255,.42) 66%, rgba(255,255,255,.08) 100%),
+      url("assets/aeropuerto-el-salvador.png");
+    background-size: cover;
+    background-position: center;
+    color:#111820;
+    align-content:center;
+    gap:clamp(24px, 3vw, 46px);
+  }
+  .hero::before { display:none; }
+  .hero::after { height:100px; background:linear-gradient(to bottom, transparent, rgba(13,17,23,.88)); }
+  .hero-inner { max-width: 660px; z-index:3; }
+  .hero h1 {
+    font-family:var(--sans);
+    font-size:clamp(2.4rem, 4.6vw, 4.8rem);
+    line-height:.99;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:-.045em;
+    color:#202329;
+  }
+  .hero h1::after { display:none; }
+  .hero h1 .accent { color:var(--red); }
+  .hero-lead { color:#2f343c; font-size:clamp(1rem,1.35vw,1.2rem); max-width:34em; font-weight:500; }
+  .hero-actions { margin-top:28px; }
+  .hero-phone { color:#202329; }
+  .hero-visual {
+    max-width:none;
+    min-height:560px;
+    aspect-ratio:auto;
+    height: min(70vh, 700px);
+    border:0;
+    border-radius:26px;
+    overflow:visible;
+    background:transparent;
+    box-shadow:none;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding:clamp(10px, 2vw, 26px);
+  }
+  .hero-photo {
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    border-radius:26px;
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:0 24px 70px rgba(0,0,0,.24);
+  }
+  .hero-photo-shade {
+    position:absolute;
+    inset:0;
+    border-radius:26px;
+    background:linear-gradient(90deg,rgba(8,12,18,.02),rgba(8,12,18,.28));
+  }
+  .floating-form {
+    position:relative;
+    z-index:3;
+    width:min(100%, 410px);
+    max-height:calc(100% - 8px);
+    overflow-y:auto;
+    padding:clamp(18px,2vw,26px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:22px;
+    background:rgba(255,255,255,.97);
+    box-shadow:0 24px 65px rgba(10,15,20,.32);
+    color:#17191e;
+    backdrop-filter:blur(12px);
+  }
+  .floating-form h3 { font-size:1.35rem; font-weight:850; }
+  .floating-form .hint { color:#5a6069; font-size:.88rem; }
+  .floating-form .form-grid { margin-top:16px; gap:11px; }
+  .floating-form .field { gap:4px; }
+  .floating-form .field label { font-size:.82rem; }
+  .floating-form .field input,
+  .floating-form .field select,
+  .floating-form .field textarea {
+    padding:10px 11px;
+    border-radius:10px;
+    font-size:.91rem;
+    background:#f8f9fa;
+  }
+  .floating-form .field textarea { min-height:58px; }
+  .floating-form .form-actions { margin-top:14px; }
+  .floating-form .form-note { color:#656a72; font-size:.76rem; }
+  .btn-primary { background:linear-gradient(110deg,#e11420,#b50812); box-shadow:0 10px 25px rgba(210,12,22,.23); }
+  .services { background:#fff; color:#17191e; }
+  .section-head p { color:#5b616a; }
+  .card { background:#fff; color:#17191e; border:1px solid #e5e6e8; border-top:3px solid var(--red); box-shadow:0 10px 30px rgba(16,19,25,.05); }
+  .card p { color:#555b64; }
+  .contact { background:linear-gradient(110deg,#d20c16,#8e0710); }
+  .contact-grid { grid-template-columns:1fr; }
+  .contact-copy p { max-width:44em; }
+  @media (min-width: 900px) {
+    .hero { grid-template-columns:minmax(0,.92fr) minmax(440px,1.08fr); align-items:center; }
+    .hero-visual { justify-self:stretch; }
+  }
+  @media (max-width: 899px) {
+    .site-header { height:76px; }
+    .brand-logo { width:min(190px,45vw); }
+    .hero { padding-top:112px; background-position:60% center; }
+    .hero-visual { min-height:unset; height:auto; aspect-ratio: 1.15 / 1; padding:12px; }
+    .floating-form { width:min(100%,390px); max-height:calc(100% - 12px); }
+  }
+  @media (max-width: 560px) {
+    .site-header { padding:8px 16px; }
+    .brand-logo { width:160px; }
+    .hero { padding:104px 16px 34px; gap:22px; background-position:58% center; }
+    .hero h1 { font-size:clamp(2.15rem,10.2vw,3.25rem); }
+    .hero-lead { margin-top:16px; }
+    .hero-actions .btn { width:100%; }
+    .hero-visual { aspect-ratio:auto; height:auto; min-height:unset; padding:0; overflow:visible; }
+    .hero-photo { position:relative; height:230px; border-radius:18px; }
+    .hero-photo-shade { display:none; }
+    .floating-form { width:100%; max-height:none; margin-top:-42px; padding:20px; }
+    .floating-form .form-grid { grid-template-columns:1fr 1fr; }
+    .floating-form .field.full { grid-column:1/-1; }
+  }
+
 </style>
 </head>
 
@@ -453,12 +604,8 @@
 </svg>
 
 <header class="site-header" id="top">
-  <a class="brand" href="#top" aria-label="Transporte Ejecutivo Premium, inicio">
-    <span class="brand-bar" aria-hidden="true"></span>
-    <span>
-      <span class="brand-name">Transporte Ejecutivo</span>
-      <span class="brand-sub">Premium en El Salvador</span>
-    </span>
+  <a class="brand" href="#top" aria-label="PICHE Premium Services, inicio">
+    <img class="brand-logo" src="assets/logo-piche.png" alt="PICHE Premium Services" width="218" height="94">
   </a>
 
   <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
@@ -479,8 +626,8 @@
   <!-- Bienvenida -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
-      <h1 id="hero-title">Tu viaje merece un servicio de primer nivel</h1>
-      <p class="hero-lead">Te recibimos en el aeropuerto, te llevamos por todo El Salvador y viajamos contigo a Centroamérica. Siempre con chofer incluido.</p>
+      <h1 id="hero-title">Traslados premium <span class="accent">la logística en las mejores manos</span></h1>
+      <p class="hero-lead">Te recibimos en el Aeropuerto Internacional de El Salvador y te llevamos por todo el país y Centroamérica. Siempre con chofer incluido.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://wa.me/50377443587?text=Hola%2C%20quiero%20reservar%20un%20traslado%20ejecutivo." target="_blank" rel="noopener">
           <svg aria-hidden="true"><use href="#i-chat"/></svg> Reservar por WhatsApp
@@ -489,11 +636,46 @@
       </div>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <img class="hero-photo" src="assets/hero-transporte-ejecutivo.png"
-           alt="" fetchpriority="high" decoding="async" width="1648" height="928">
-      <div class="hero-photo-shade"></div>
-      <div class="hero-photo-caption"><span class="caption-dot"></span> Transporte ejecutivo · El Salvador</div>
+    <div class="hero-visual">
+      <img class="hero-photo" src="assets/vehiculos-piche.jpg" alt="Flota de vehículos para traslados premium" fetchpriority="high" decoding="async" width="1048" height="410">
+      <div class="hero-photo-shade" aria-hidden="true"></div>
+      <form class="form-card floating-form" id="reservaForm">
+        <h3>Solicita tu traslado</h3>
+        <p class="hint">Completa los datos y continúa por WhatsApp.</p>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre completo">
+          </div>
+          <div class="field full">
+            <label for="servicio">Servicio</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" selected disabled>Selecciona un servicio</option>
+              <option>Recogida en el aeropuerto</option>
+              <option>Traslado en El Salvador</option>
+              <option>Viaje a Centroamérica</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="fecha" type="date">
+          </div>
+          <div class="field">
+            <label for="pasajeros">Pasajeros</label>
+            <input id="pasajeros" name="pasajeros" type="number" min="1" max="60" inputmode="numeric" placeholder="Ej. 3">
+          </div>
+          <div class="field full">
+            <label for="detalle">Detalles adicionales</label>
+            <textarea id="detalle" name="detalle" rows="2" placeholder="Origen, destino, vuelo u otra información"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary btn-block" type="submit">
+            <svg aria-hidden="true"><use href="#i-chat"/></svg> Continuar por WhatsApp
+          </button>
+        </div>
+        <p class="form-note" id="formNote" aria-live="polite">No se realiza ningún cobro en este formulario.</p>
+      </form>
     </div>
   </section>
 
@@ -540,49 +722,7 @@
         <a class="contact-number" href="https://wa.me/50377443587" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al +503 7744 3587">+503 7744 3587</a>
       </div>
 
-      <form class="form-card" id="reservaForm">
-        <h3>Solicita tu reserva</h3>
-        <p class="hint">Al enviar, se abre WhatsApp con tu mensaje listo.</p>
 
-        <div class="form-grid">
-          <div class="field full">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre completo">
-          </div>
-
-          <div class="field full">
-            <label for="servicio">Servicio</label>
-            <select id="servicio" name="servicio" required>
-              <option value="" selected disabled>Selecciona un servicio</option>
-              <option>Recogida en el aeropuerto</option>
-              <option>Traslado en El Salvador</option>
-              <option>Viaje a Centroamérica</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="fecha">Fecha</label>
-            <input id="fecha" name="fecha" type="date">
-          </div>
-
-          <div class="field">
-            <label for="pasajeros">Pasajeros</label>
-            <input id="pasajeros" name="pasajeros" type="number" min="1" max="60" inputmode="numeric" placeholder="Ej. 3">
-          </div>
-
-          <div class="field full">
-            <label for="detalle">Detalles (opcional)</label>
-            <textarea id="detalle" name="detalle" placeholder="Origen, destino, número de vuelo…"></textarea>
-          </div>
-        </div>
-
-        <div class="form-actions">
-          <button class="btn btn-primary btn-block" type="submit">
-            <svg aria-hidden="true"><use href="#i-chat"/></svg> Enviar por WhatsApp
-          </button>
-        </div>
-        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
-      </form>
     </div>
   </section>
 </main>

@@ -1,33 +1,23 @@
-TRANSPORTE EJECUTIVO PREMIUM — PAQUETE PARA NETLIFY
+PICHE PREMIUM SERVICES — PAQUETE PARA NETLIFY
 
-CONTENIDO
-- index.html: sitio estático responsive, con menú móvil, secciones de servicios y formulario.
-- assets/hero-transporte-ejecutivo.png: nueva imagen principal.
-- netlify.toml: configuración básica de publicación y encabezados.
+ARCHIVOS
+- index.html: sitio responsive, menú, servicios y formulario flotante de reserva.
+- assets/logo-piche.png: logotipo suministrado.
+- assets/aeropuerto-el-salvador.png: fotografía del aeropuerto suministrada.
+- assets/vehiculos-piche.jpg: imagen de vehículos usada en el panel del formulario.
+- netlify.toml: configuración básica para publicación estática.
 
-PROBAR LOCALMENTE
-Abre index.html en un navegador. Para probarlo como sitio estático también puedes usar una extensión de servidor local.
+FUNCIONALIDAD
+- Formulario de reserva flotante en el lado derecho de la bienvenida en escritorio.
+- En móvil, el formulario aparece debajo del encabezado y la imagen.
+- Validación de nombre y servicio.
+- El formulario prepara los datos y abre WhatsApp al +503 7744 3587.
+- Navegación principal reducida a Servicios, Contacto y WhatsApp; no incluye Nuestra flota ni Nosotros.
 
-PUBLICAR EN NETLIFY (SIN GITHUB)
-1. Descomprime transporte-ejecutivo-netlify.zip.
-2. Entra a https://app.netlify.com/drop
-3. Arrastra la carpeta descomprimida (o el contenido de la carpeta) al área de despliegue.
-4. Netlify generará una URL temporal *.netlify.app.
-5. Prueba la web en móvil y escritorio antes de compartirla.
+PUBLICAR
+1. Descomprime el ZIP.
+2. Sube la carpeta completa a https://app.netlify.com/drop.
+3. Comprueba la web en escritorio y móvil.
 
-PUBLICAR CON GITHUB
-1. Sube index.html, netlify.toml y la carpeta assets a un repositorio.
-2. En Netlify elige Add new site > Import an existing project.
-3. Selecciona el repositorio. Build command: dejar vacío. Publish directory: .
-4. Despliega y prueba el formulario.
-
-FUNCIONALIDAD ACTUAL
-- Diseño adaptable a móvil y escritorio.
-- Navegación y menú móvil.
-- Formulario que valida nombre y servicio, y prepara una solicitud en WhatsApp.
-- Enlaces directos a WhatsApp y teléfono.
-- Fecha mínima configurada al día actual y año automático en el pie.
-
-IMPORTANTE
-El formulario abre WhatsApp con el mensaje preparado; no guarda reservas en una base de datos ni envía correo por sí solo. El teléfono configurado es +503 7744 3587. Verifica que sea el número correcto antes de publicar.
-La imagen principal es una imagen publicitaria generada para el diseño, no una fotografía documental del vehículo real.
+NOTA
+El formulario abre WhatsApp; no guarda reservas en una base de datos. Verifica el número de contacto antes de anunciar la web.
