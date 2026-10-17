@@ -700,6 +700,82 @@
     height:1.05em;
   }
 
+
+  /* Ajustes exclusivos para móviles: menú legible y formulario al inicio */
+  @media (max-width: 860px) {
+    .nav a:not(.btn),
+    .nav a:not(.btn):hover {
+      color: #fff !important;
+    }
+    .nav {
+      background: rgba(10, 10, 10, .98) !important;
+      z-index: 60;
+    }
+    .nav .btn-outline {
+      color: #fff !important;
+    }
+  }
+  @media (max-width: 560px) {
+    .hero {
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:stretch !important;
+      gap:22px !important;
+      padding-top:calc(var(--header-h) + 12px) !important;
+    }
+    /* El formulario aparece inmediatamente debajo del encabezado/menú. */
+    .hero-visual {
+      order:-1 !important;
+      display:block !important;
+      width:100% !important;
+      max-width:none !important;
+      min-height:0 !important;
+      height:auto !important;
+      aspect-ratio:auto !important;
+      padding:0 !important;
+      overflow:hidden !important;
+      border:0 !important;
+      border-radius:18px !important;
+      background:rgba(255,255,255,.72) !important;
+      isolation:isolate;
+    }
+    .hero-photo {
+      position:absolute !important;
+      inset:0 !important;
+      width:100% !important;
+      height:100% !important;
+      min-height:100% !important;
+      object-fit:cover !important;
+      opacity:.09 !important;
+      border:0 !important;
+      border-radius:18px !important;
+      box-shadow:none !important;
+      pointer-events:none;
+    }
+    .hero-photo-shade {
+      position:absolute !important;
+      inset:0 !important;
+      display:block !important;
+      border-radius:18px !important;
+      background:rgba(255,255,255,.76) !important;
+      pointer-events:none;
+    }
+    .floating-form {
+      position:relative !important;
+      z-index:3 !important;
+      width:100% !important;
+      max-width:none !important;
+      max-height:none !important;
+      margin:0 !important;
+      padding:20px !important;
+      border-radius:18px !important;
+      background:rgba(255,255,255,.97) !important;
+    }
+    .hero-inner {
+      order:0 !important;
+    }
+  }
+
 </style>
 </head>
 

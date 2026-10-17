@@ -28,3 +28,10 @@ Se reemplazó la silueta provisional por el archivo oficial aprobado que entreg�
 
 ICONO DE WHATSAPP
 Se añadió el icono verde de WhatsApp junto al número telefónico de la bienvenida y junto al contacto de WhatsApp del pie de página. Ambos enlaces abren el chat con el número +503 7744 3587.
+
+
+AJUSTES EXCLUSIVOS PARA MÓVILES
+- Los enlaces del menú desplegable ahora usan texto blanco para mantener el contraste.
+- El formulario de reserva aparece inmediatamente debajo del encabezado/menú, antes del texto de bienvenida.
+- En móvil, la fotografía de los vehículos queda como marca de agua tenue detrás del formulario, sin ocupar una franja grande antes de él.
+- La distribución de escritorio no se modifica con estas reglas.
